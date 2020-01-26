@@ -6,8 +6,8 @@ EXPOSE 8080
 
 LABEL io.openshift.s2i.scripts-url="image:///usr/local/s2i" \    
       io.openshift.expose-services="8080:http" \
-      io.k8s.description="Quarkus.io S2I binary image for running native application on UBI minimal" \
-      io.k8s.display-name="Quarkus.io S2I (UBI + Native image)" \
+      io.k8s.description="Quarkus.io S2I binary image for running native application on alpine-glibc image" \
+      io.k8s.display-name="Quarkus.io S2I (Alpine-Glibc + Native image)" \
       io.openshift.tags="builder,java,quarkus,native"
 
 COPY s2i /usr/local/s2i
